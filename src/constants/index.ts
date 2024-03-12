@@ -120,7 +120,7 @@ const testimonials = [
 
 const projects = [
    {
-      name: "Flex Pay",
+      name: "Flex",
       description: "Avoid upfront costs for materials",
       tags: [
          {

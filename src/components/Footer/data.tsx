@@ -34,12 +34,12 @@ export const FooterLinksData = [
          category: "Products",
          links: [
             {
-               title: "Flex Pay",
+               title: "Flex",
                url: "#",
                soon: false,
             },
             {
-               title: "Flex Grow",
+               title: "Grow",
                url: "#",
                soon: true,
             },

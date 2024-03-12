@@ -21,28 +21,64 @@ import InfoGrid from "components/InfoGrid";
 import GetStarted from "components/GetStarted";
 const data = [
    {
-      image: "/images/receipts/iconOne.svg",
-      heading: "Digital Receipts",
-      paragraph:
-         "Go green with our digital receipts – a modern, eco-friendly solution for seamless transaction records.",
+      image: "/chart.jpg",
+      heading: "Flex Spending Focus",
+      subHeading: "Common amongst students and corp members.",
+      text: "This template is for users focusing on enjoying current experiences with a higher spending ratio, while still saving.",
+      items: [
+         {
+            text: "80%",
+            subText: "Spending",
+         },
+         {
+            text: "10%",
+            subText: "Emergency Fund",
+         },
+         {
+            text: "10%",
+            subText: "Investment",
+         },
+      ],
    },
    {
-      image: "/images/receipts/iconTwo.svg",
-      heading: "Paperless Tracking",
-      paragraph:
-         "Ditch the paper clutter. Easily track and manage your expenses with our efficient paperless receipt system.",
+      image: "/chart.jpg",
+      heading: "Balanced Budget Blueprint",
+      subHeading: "Popular with young professionals, freelancers.",
+      text: "A balanced template for managing income to support both present enjoyment and future security, ideal for those wanting to enjoy today while preparing for tomorrow.",
+      items: [
+         {
+            text: "60%",
+            subText: "Spending",
+         },
+         {
+            text: "20%",
+            subText: "Emergency Fund",
+         },
+         {
+            text: "20%",
+            subText: "Investment",
+         },
+      ],
    },
    {
-      image: "/images/receipts/icon.svg",
-      heading: "Instant Confirmation",
-      paragraph:
-         "Receive instant confirmation of your transactions with our swift digital receipt system. No more waiting!.",
-   },
-   {
-      image: "/images/receipts/iconFour.svg",
-      heading: "Organized Records",
-      paragraph:
-         "Keep your financial records organized effortlessly. Our receipts make tracking and managing expenses a breeze.",
+      image: "/chart.jpg",
+      heading: "Max Savings Strategy",
+      subHeading: "Mostly used by professionals looking to build future financial resilience.",
+      text: "A template designed for fast savings growth by cutting non-essential spending, ideal for users focused on goals like home purchase or emergency funds.",
+      items: [
+         {
+            text: "40%",
+            subText: "Spending",
+         },
+         {
+            text: "30%",
+            subText: "Emergency Fund",
+         },
+         {
+            text: "30%",
+            subText: "Investment",
+         },
+      ],
    },
 ];
 const sectionsTwo = [
@@ -126,23 +162,82 @@ const images = [
          <Features client:only />
       </section>
    </section>
+   <section
+      class="container relative w-full max-w-[1700px] overflow-x-hidden px-container-base py-[5rem] md:py-[9rem] lg:px-container-lg xl:px-container-xl"
+   >
+      <section class="flex flex-col gap-12 md:gap-[10rem]">
+         <div class="flex h-full flex-col items-center justify-center gap-6 2xl:gap-8">
+            <h5
+               class="text-center text-[1.9rem] font-[700] leading-[130%] tracking-[0.02rem] transition-all duration-500 ease-in-out md:max-w-[80rem] md:text-[2.6rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[3rem] lg:leading-[4rem]"
+            >
+               Financial Templates
+            </h5>
+            <p
+               class="text-center text-[1.18rem] font-semibold leading-[30px] md:mt-4 md:text-[1.5rem]"
+            >
+               For an optimized experience, kindly choose the financial template that aligns with
+               your financial goals,
+            </p>
+         </div>
+         {
+            data?.map((i: any, idx: number) => {
+               return (
+                  <section class="w-full  ">
+                     <div
+                        class={`flex w-full flex-col  md:gap-[5rem] ${
+                           idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                        } `}
+                     >
+                        <div class={`flex flex-col justify-center md:w-[50%] `}>
+                           <h3 class=" mb-6 w-full text-left text-[1.8rem] font-[600] tracking-[-0.02388rem] text-secondary-2 md:max-w-[40rem] md:text-[2.5rem] md:leading-[4rem]">
+                              {i?.heading}
+                           </h3>
+                           <p class="mb-4 w-full text-left text-[1.18rem] text-gray-600 md:max-w-[40rem] md:text-[1.34rem]">
+                              {i?.text}
+                           </p>
+                           <div class="my-4 mb-8 flex flex-col gap-4">
+                              <h5 class="text-[1.18rem] font-semibold text-gray-600 md:text-[1.34rem]">
+                                 {i?.subHeading}
+                              </h5>
+                           </div>
+                           <div class="flex justify-between md:max-w-[70%]">
+                              {i.items?.map((content: any, index: number) => (
+                                 <div class="mb-8 flex flex-col gap-2 ">
+                                    <div class="flex items-center gap-4">
+                                       <span class="text-center text-[1.28rem] font-semibold leading-[1.5rem]">
+                                          {content.text}
+                                       </span>
+                                    </div>
+                                    <p class="text-[1.24] text-gray-500  ">{content.subText}</p>
+                                 </div>
+                              ))}
+                           </div>
+                        </div>
+                        <div class="flex  w-full items-center justify-center rounded-[0.75rem] md:w-[50%]">
+                           <img
+                              src={url(`${i?.image}`)}
+                              alt={`${i?.image}`}
+                              class="h-full w-9/12 object-contain"
+                           />
+                        </div>
+                     </div>
+                  </section>
+               );
+            })
+         }
+      </section>
+   </section>
    <section class="w-full scroll-mt-28 bg-primary-2" id="download">
       <!-- info grid icon cards sections -->
       <section
          class="container relative grid w-full max-w-[1700px] gap-[5rem] rounded-lg px-container-base py-[3rem] pb-20 md:grid-cols-[1fr_1fr] md:py-[5rem] md:pb-[7.25rem] md:pt-[6rem] lg:px-container-lg xl:px-container-xl"
       >
          <div class="flex w-full flex-col">
-            <h4
-               class="mb-[6rem] text-[1.3rem] font-[700] tracking-[0.0125rem] text-secondary-2 lg:text-[1.8rem] lg:leading-[2.5rem] xxl:max-w-[70%]"
-            >
-               <TextFormat
-                  text={"Achieve on time delivery of multiple projects without stretching your company finances."}
-                  keyword={"company finances."}
-                  keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
-               />
-            </h4>
-
-            <img src={url("/images/receipts/needs.jpg")} alt="" class="w-full" />
+            <img
+               src={url("/images/receipts/needs.jpg")}
+               alt=""
+               class="h-full w-full rounded-xl shadow-3"
+            />
             <a
                href="#"
                class="mt-10 flex w-6/12 cursor-pointer items-center justify-center rounded-md bg-primary-1 px-4 py-4 text-white shadow-1 transition-opacity duration-300 ease-in-out hover:opacity-90 active:opacity-100 md:hidden md:w-fit"
@@ -182,49 +277,6 @@ const images = [
                </Fade>
             </div>
          </div>
-      </section>
-   </section>
-   <section class="w-full overflow-hidden bg-primary-2">
-      <section
-         class="container relative mt-12 w-full max-w-[1700px] space-y-8 px-container-base pb-12 md:pb-20 lg:space-y-[5rem] lg:px-container-lg xl:px-container-xl"
-      >
-         <div class="relative flex w-full flex-col justify-center gap-[2.5rem] md:gap-[2.75rem]">
-            <div class="flex flex-col items-center justify-center gap-6 2xl:gap-8">
-               <h4
-                  class="text-center text-[1.3rem] font-[700] leading-[130%] tracking-[0.02rem] transition-all duration-500 ease-in-out md:max-w-[90rem] md:leading-[4rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[2.3rem] xxl:text-[2.7rem]"
-               >
-                  <TextFormat
-                     text={`How it works for Suppliers`}
-                     keyword={"Suppliers"}
-                     keywordClassName="text-primary-1  transition-all duration-500 ease-in-out"
-                  />
-               </h4>
-            </div>
-         </div>
-         <section
-            class="mx-auto grid w-full gap-[3rem] rounded-lg pb-20 md:grid-cols-[1fr_1fr] lg:max-w-[70%]"
-         >
-            {
-               sections.map((item, index) => {
-                  return (
-                     <>
-                        <article class="flex  items-center gap-4 rounded-2xl border-[1px]  px-5 py-8  shadow-md xxl:gap-12 xxl:py-12">
-                           <div class="flex flex-col gap-2 px-2  xxl:gap-4">
-                              <img src={url(item.img)} alt="" class="w-12 xl:w-12" />
-                              <h3 class="font-semibold md:text-base xl:text-lg">
-                                 <span>{index + 1 < 10 ? `0${index + 1}` : index + 1}.</span>{" "}
-                                 {item.heading}
-                              </h3>
-                              <p class="text-[0.8rem] text-sm leading-[130%] tracking-[0.02rem] md:leading-[2rem] md:tracking-[0.0225rem] xl:text-base">
-                                 {item.paragraph}
-                              </p>
-                           </div>
-                        </article>
-                     </>
-                  );
-               })
-            }
-         </section>
       </section>
    </section>
 
