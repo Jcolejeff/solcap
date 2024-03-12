@@ -34,17 +34,12 @@ export const FooterLinksData = [
          category: "Products",
          links: [
             {
-               title: "Material Financing",
+               title: "Flex Pay",
                url: "#",
                soon: false,
             },
             {
-               title: "Advance Pay",
-               url: "#",
-               soon: true,
-            },
-            {
-               title: "Invoice discounting",
+               title: "Flex Grow",
                url: "#",
                soon: true,
             },
@@ -70,8 +65,8 @@ export const FooterLinksData = [
             //    url: "#faq",
             // },
             {
-               title: "support@getsolcap.co",
-               url: "mailto:support@getsolcap.co",
+               title: "support@getSolcap.co",
+               url: "mailto:support@getSolcap.co",
             },
          ],
       },

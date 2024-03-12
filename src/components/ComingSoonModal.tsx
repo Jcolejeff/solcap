@@ -53,7 +53,7 @@ const ComingSoonModal = () => {
       defaultValues: {
          user_email: "",
          message:
-            "Hi,i just signed up to join the solcap when you launch!, please notify me when you launch",
+            "Hi,i just signed up to join the Solcap when you launch!, please notify me when you launch",
       },
    });
 
@@ -215,7 +215,7 @@ const ComingSoonModal = () => {
                      </form>
                   </Form>
                   <a
-                     href="mailto:support@getsolcap.co"
+                     href="mailto:support@getSolcap.co"
                      className="text-center font-semibold text-primary-1 underline md:text-lg"
                   >
                      Or Contact Us

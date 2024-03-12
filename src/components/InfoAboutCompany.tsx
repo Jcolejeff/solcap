@@ -72,8 +72,8 @@ const InfoAboutCompany = () => {
             <div className="flex h-full flex-col items-center justify-center gap-6 2xl:gap-8">
                <p className=" mt-4  font-extrabold leading-[30px] md:text-lg">
                   <TextFormat
-                     text={`solcap Products`}
-                     keyword={"solcap"}
+                     text={`Solcap Products`}
+                     keyword={"Solcap"}
                      keywordClassName=" 
                      text-secondary-1 transition-all duration-500 ease-in-out"
                   />

@@ -14,7 +14,7 @@ const Menu = () => {
    const ServicesData = [
       { title: "Home", link: "/" },
       { title: "Hire", link: "/hire" },
-      { title: "Join The solcap", link: "/join" },
+      { title: "Join The Solcap", link: "/join" },
    ];
    const CompanyData = [
       { title: "About Us", link: "/about-us" },

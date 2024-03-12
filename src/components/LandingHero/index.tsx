@@ -11,21 +11,21 @@ const LandingPageHero = () => {
    const [index, setIndex] = useState(0);
 
    return (
-      <section className="container relative w-full   max-w-[1700px] px-container-base pt-[3rem] md:-mb-[16rem] lg:px-container-lg lg:pb-[5rem] lg:pt-[0.5rem] xl:px-container-xl  xxl:py-[5rem] xxl:pb-[8rem]">
+      <section className="container relative w-full   max-w-[1700px] px-container-base pb-12 pt-[3rem] md:-mb-[16rem] lg:px-container-lg lg:pb-[5rem] lg:pt-[0.5rem] xl:px-container-xl  xxl:py-[5rem] xxl:pb-[8rem]">
          <div className="relative flex w-full flex-col justify-center gap-[0.5rem]   md:gap-[2.75rem] ">
             <div className=" flex flex-col items-center justify-center  gap-6 2xl:gap-8">
                <div>
                   <h1 className="max-w-[80rem] text-center text-[2rem]    font-[700] leading-[130%] tracking-[0.02rem] text-secondary-2 transition-all duration-500 ease-in-out md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[3.4rem] xxl:text-[5rem] xxl:leading-[5rem]">
                      <TextFormat
-                        text={`Solar Solution Built for`}
-                        keyword={"The solcap"}
+                        text={`Enabling easy access to renewable energy`}
+                        keyword={"The Solcap"}
                         keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
                      />
                   </h1>
                   <h1 className="max-w-[80rem] text-center text-[2rem]    font-[700] leading-[130%] tracking-[0.02rem] text-secondary-2 transition-all duration-500 ease-in-out md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[3.4rem] xxl:text-[5rem] xxl:leading-[5rem]">
                      <TextFormat
-                        text={`Nigeria`}
-                        keyword={"Nigeria"}
+                        text={`for Africa`}
+                        keyword={"for Africa"}
                         keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
                      />
                   </h1>

@@ -58,7 +58,7 @@ const experiences = [
       ],
    },
    {
-      title: "Empower Your Business Planning on Your Terms with solcap in Your Arsenal",
+      title: "Empower Your Business Planning on Your Terms with Solcap in Your Arsenal",
       company_name: "Street Bazaar",
       icon: "/images/landing-page/zcomb.svg",
       iconBg: "#E6DEDD",
@@ -120,7 +120,7 @@ const testimonials = [
 
 const projects = [
    {
-      name: "Materials Financing",
+      name: "Flex Pay",
       description: "Avoid upfront costs for materials",
       tags: [
          {

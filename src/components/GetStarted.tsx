@@ -127,14 +127,14 @@ const GetStartedForm = () => {
             <div>
                <h3 className="mb-4 max-w-[60rem] text-center text-[1.1rem] font-[600] leading-[130%] tracking-[0.02rem] text-secondary-2 transition-all duration-500 ease-in-out md:text-[1.6rem] md:leading-[2rem] md:tracking-[0.0225rem] ">
                   <TextFormat
-                     text={`Ready to Transform Your Construction Projects?`}
+                     text={`Ready to Transform Your business?`}
                      keyword={"Construction"}
                      keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
                   />
                </h3>
 
                <h4 className="max-w-[38.875rem] text-center text-[0.8rem] font-[500] leading-[2.2rem] text-secondary-2 md:text-[1rem] md:leading-[2rem] xxl:max-w-[45.875rem]  xxl:text-[1.3rem]">
-                  Join solcap Today!
+                  Join Solcap Today!
                </h4>
             </div>
 
@@ -263,7 +263,7 @@ const GetStartedForm = () => {
                Or Contact Us
             </a> */}
          </section>
-         <div className=" rounded-md bg-cover bg-center filter transition-all  duration-300  ease-in-out hover:cursor-pointer   md:w-1/2">
+         <div className=" rounded-md bg-cover  bg-center filter transition-all  duration-300  ease-in-out hover:cursor-pointer   md:w-1/2">
             <img
                src={url("/images/modal.jpg")}
                className="h-full w-full  rounded-md object-cover "

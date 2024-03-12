@@ -1,7 +1,7 @@
-# solcap landing
+# Solcap landing
 
 ```
-landing page for the solcap platform
+landing page for the Solcap platform
 ```
 
 ## 🚀 Project Structure

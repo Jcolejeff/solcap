@@ -27,14 +27,14 @@ const PriceList = () => {
          title: "Business",
          price: prices[index].prices[0],
          for: "Ideal for growing businesses that need more customers",
-         features: ["Customizable solcap", "Basic Support", "One Integration", "Email support"],
+         features: ["Customizable Solcap", "Basic Support", "One Integration", "Email support"],
       },
       {
          title: "Business Pro",
          price: prices[index].prices[1],
          for: "For large organization with specific needs",
          features: [
-            "Customizable solcap",
+            "Customizable Solcap",
             "Priority support",
             "Three Integration",
             "Email support",
@@ -45,7 +45,7 @@ const PriceList = () => {
          price: prices[index].prices[2],
          for: "For large organization with specific needs",
          features: [
-            "Customizable solcap",
+            "Customizable Solcap",
             "Priority support",
             "One Integration",
             "Email support",
